@@ -20,7 +20,7 @@ function showWeather() {
         alert('В полі повинні бути тількі літери. Введіть коректну назву міста.');
         return false;
     }
-    apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&APPID=5d066958a60d315387d9492393935c19&lang=uk`;
+    apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&APPID=5d066958a60d315387d9492393935c19&lang=uk`;
     fetchData(apiUrl);
 }
 
